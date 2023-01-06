@@ -1,0 +1,302 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  transition: 1s;
+  font-size: 32px;
+}
+
+
+
+
+.main {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc_container {
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+.calc_toggle {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc_toggle p {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.calc_toggle_contol {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc_number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.calc_toggle_buton {
+  width: 75%;
+  height: 25px;
+  margin-top: 5px;
+  border-radius: 30px;
+  background-color: hsl(223, 31%, 20%);
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  transition: 1s;
+}
+
+.calc_theme {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: hsl(6, 63%, 50%);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.text_container {
+  width: 100%;
+}
+
+.input_area {
+  width: 100%;
+  height: 85px;
+  background-color: hsl(223, 31%, 20%);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.buton_container {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 40px;
+}
+
+.buton {
+  width: 100%;
+  height: 60vh;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  background: hsl(224, 36%, 15%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.buton_number {
+  padding: 10px;
+  text-align: center;
+  color: hsl(224, 28%, 35%);
+  background: hsl(30, 25%, 89%);
+  font-weight: 700;
+  border-radius: 7px;
+  box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.buton_number:nth-child(4) {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 13.5px;
+}
+
+.buton_number:nth-child(17) {
+  grid-column: 1/3;
+  grid-row: 5;
+  padding: 12px;
+}
+
+.buton_number:nth-child(18) {
+  grid-column: 3/5;
+  grid-row: 5;
+  padding: 12px;
+}
+
+
+/* theme 1 */
+.back1 {
+  background: hsl(222, 26%, 31%);
+  color: white;
+}
+
+.color1 {
+  background-color: hsl(219, 26%, 50%);
+  color: white;
+  box-shadow: 0px 5px 0px 0px hsl(219, 23%, 30%);
+}
+
+.color2 {
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+  box-shadow: 0px 5px 0px 0px hsl(6, 70%, 34%);
+}
+
+/* theme 2 */
+.back2 {
+  background: hsl(0, 0%, 90%);
+}
+
+.color3 {
+  color: white !important;
+  background: hsl(185, 42%, 37%);
+  box-shadow: 0px 5px 0px 0px hsl(185, 58%, 25%);
+}
+
+.color4 {
+  color: white !important;
+  background: hsl(12, 71%, 56%);
+  box-shadow: 0px 5px 0px 0px hsl(6, 70%, 34%);
+}
+
+.colorback1 {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.colorback2 {
+  color: hsl(60, 10%, 19%);
+}
+
+.colorback3 {
+  background: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+}
+
+/* theme 3 */
+.back3 {
+  background: hsl(269, 61%, 21%);
+  color: hsl(52, 100%, 62%);
+}
+
+.color5 {
+  color: white !important;
+  background: hsl(281, 89%, 26%) !important;
+  box-shadow: 0px 5px 0px 0px hsl(290, 70%, 36%) !important;
+}
+
+.color6 {
+  color: hsl(268, 47%, 21%) !important;
+  background: hsl(176, 100%, 44%) !important;
+  box-shadow: 0px 5px 0px 0px hsl(290, 70%, 36%) !important;
+}
+
+.colorback4 {
+  background: hsl(268, 71%, 12%);
+}
+
+.colorback5 {
+  color: hsl(52, 100%, 62%);
+  background: hsl(268, 47%, 21%);
+  box-shadow: 0px 5px 0px 0px hsl(290, 70%, 36%);
+}
+
+.colorback6 {
+  color: hsl(52, 100%, 62%);
+  background: hsl(268, 71%, 12%);
+}
+
+.modal {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  transform: scale(0);
+  transition: 1s;
+}
+
+.modal p {
+  font-size: 1.5rem;
+  position: absolute;
+  margin-top: 40%;
+  padding: 15px;
+  background: grey;
+  border-radius: 10px;
+  box-shadow: 0px 5px 0px 0px rgb(182, 182, 182);
+}
+
+.modal_img {
+  width: 80%;
+  object-fit: contain;
+}
+
+.active{
+  transform: scale(1);
+}
+
+
+
+
+
+
+@media(min-width: 1250px) {
+  .calc_container {
+    width: 40%;
+  }
+
+  .text_container {
+    width: 40%;
+  }
+
+  .buton_container {
+    width: 40%;
+  }
+
+  .modal p {
+    margin-top: 5%;
+  }
+
+  .modal_img{
+    width: 30%;
+  }
+}
